@@ -14,7 +14,7 @@ public class Scanner {
 	}
 	
 	public void tokenize(){
-		StringTokenizer st = new StringTokenizer(this.sourceCode);
+		StringTokenizer st = new StringTokenizer(this.sourceCode, "\\s+|\\.+|\\;+|\\(+|\\)+|\\\"+|\\:+|\\[+|\\]+");
 		int counter = 0;
 		while (st.hasMoreElements()) {
 			String token= (String) st.nextElement();
