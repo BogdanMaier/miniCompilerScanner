@@ -14,11 +14,12 @@ public class CsvLoaderToMap {
 	public void readCsv(String path, Map<String, String> map) {
 		try {
 
+			System.out.println("DATA READING.. " );
 			br = new BufferedReader(new FileReader(path));
 			while ((line = br.readLine()) != null) {
 				String[] data = line.split(",");
-				map.put(data[1], data[0]);
-				System.out.println("DATA: " + Arrays.deepToString(data));
+				map.put(data[1].trim(), data[0].trim());
+				System.out.println(" - adding " +data[1].trim() + " " + data[0].trim());
 			}
 
 		} catch (FileNotFoundException e) {
@@ -34,7 +35,5 @@ public class CsvLoaderToMap {
 				}
 			}
 		}
-
-		System.out.println("Done");
 	}
 }
