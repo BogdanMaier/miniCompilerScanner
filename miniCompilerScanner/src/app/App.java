@@ -13,7 +13,7 @@ public class App {
 			String sourceCode = new Scanner(new File("exampleCode.mb")).useDelimiter("\\Z").next();
 			libs.Scanner scanner = new libs.Scanner(sourceCode);
 			scanner.tokenize();
-			Container cont = new Container();
+			scanner.putTokens();
 		} catch (FileNotFoundException e) {
 			System.out.println(":: File not found !");
 		}
