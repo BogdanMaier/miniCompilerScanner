@@ -1,5 +1,7 @@
 int main ( int argc, char[] argv )
-	printf ( "Hello world!" ) ;
-	int a = 10
-	a = 20 + 30
+    printf ( "Hello !" ) ;
+    int a = 10;
+    a=20+30;
+    if ( a ==10 ) return;
+	#syso( "The error" )
 end

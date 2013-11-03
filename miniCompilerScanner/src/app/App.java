@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import libs.Container;
-
 public class App {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
